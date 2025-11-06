@@ -1,0 +1,88 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+.header {
+  background: #5bbce3;
+  background: linear-gradient(-90deg,rgba(91, 188, 227, 1) 0%, rgba(158, 207, 255, 1) 39%);
+
+  &__body {
+    padding-block: 20px;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__navigation-one {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__navigation-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+  }
+
+  &__link {
+    @include reset-link;
+
+    color: #303030;
+    font-weight: 700;
+    font-size: 17px;
+
+    &--page {
+      transition: 0.2s ease;
+      &:hover {
+        color: #000077;
+      }
+    }
+
+    &-nav-two {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  &__advice-button {
+    @include reset-button;
+
+    padding: 15px 20px;
+    color: #0000ad;
+    border: 3px solid #0000ad;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.2s ease;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  &__navigation-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 7px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
