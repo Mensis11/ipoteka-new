@@ -1,0 +1,34 @@
+.advantages {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    &-item {
+      display: flex;
+      align-items: stretch;
+      padding: 60px 20px;
+      background-color: white;
+      border-radius: 10px;
+      justify-content: start;
+    }
+
+    &__title {
+      font-weight: 700;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    row-gap: 10px;
+  }
+}
