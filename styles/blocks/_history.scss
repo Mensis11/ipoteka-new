@@ -1,0 +1,39 @@
+.history {
+
+  &__body {
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #5a5a5a;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &-item {
+      text-decoration: dotted;
+      padding-left: 10px;
+      color: #5a5a5a;
+    }
+  }
+}
