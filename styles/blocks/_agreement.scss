@@ -1,5 +1,14 @@
 .agreement {
 
+  &__title {
+    background-color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    justify-self: start;
+  }
+
   &__list {
     display: flex;
     align-items: center;

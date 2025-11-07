@@ -306,6 +306,7 @@
     <section class="section agreement">
         <div class="agreement__body">
             <div class="agreement__body-inner container">
+                <h2 class="agreement__title">Працюємо легально</h2>
                 <ul class="agreement__list">
                     <li class="agreement__list-item">
                         <div class="agreement__content-wrapper">
@@ -323,5 +324,52 @@
             </div>
         </div>
     </section>
+
+    <section class="section calculator">
+        <div class="calculator__body">
+            <div class="calculator__container container">
+                <div class="calculator__card calculator__card js-calculator">
+                    <h2 class="calculator__title">Розрахувати кредит</h2>
+                    <div class="calculator__content">
+                        <div class="calculator__fields-wrapper">
+                            <div class="calculator__field">
+                                <label class="calculator__label">Сума кредиту, $</label>
+                                <input class="calculator__input js-sum-input" type="number" value="10000" min="1000" step="1000">
+                            </div>
+                            <div class="calculator__field">
+                                <label class="calculator__label">Термін, місяців</label>
+                                <input class="calculator__input js-slider-month-input" type="range" min="6" max="240" step="6" value="12">
+                                <div class="calculator__slider-value js-slider-month-label">12 міс.</div>
+                            </div>
+                            <div class="calculator__field">
+                                <label class="calculator__label">Ставка % на місяць</label>
+                                <input class="calculator__input js-rate-input" type="number" value="5" min="1" max="100">
+                            </div>
+                        </div>
+                        <div class="calculator__results">
+                            <div>
+                                <span class="calculator__results-label">Сума кредиту:</span>
+                                <span class="calculator__results-value js-sum-credit">0 $</span>
+                            </div>
+                            <div>
+                                <span class="calculator__results-label">Відсотки:</span>
+                                <span class="calculator__results-value js-percent-credit">0 $</span>
+                            </div>
+                            <div>
+                                <span class="calculator__results-label">Загальна сума:</span>
+                                <span class="calculator__results-value js-sum-amount">0 $</span>
+                            </div>
+                            <div>
+                                <span class="calculator__results-label">Щомісячно:</span>
+                                <span class="calculator__results-value js-monthly-payment">0 $</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/main.js" type="module"></script>
 </body>
 </html>
