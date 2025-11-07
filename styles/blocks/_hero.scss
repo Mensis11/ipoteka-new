@@ -2,9 +2,11 @@
 @use '../helpers/media' as *;
 
 .hero {
+  background: #5bbce3;
+  background: linear-gradient(-90deg,rgba(91, 188, 227, 1) 0%, rgba(158, 207, 255, 1) 39%);
+
   &__body {
-    background: #5bbce3;
-    background: linear-gradient(-90deg,rgba(91, 188, 227, 1) 0%, rgba(158, 207, 255, 1) 39%);
+    padding-bottom: 50px;
 
     &-inner {
       display: grid;
