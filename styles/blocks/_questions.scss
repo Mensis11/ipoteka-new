@@ -1,0 +1,18 @@
+.questions {
+
+  &__title {
+    font-size: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+}

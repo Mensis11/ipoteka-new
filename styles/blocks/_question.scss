@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+
+.question {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;
+  }
+
+  &__button {
+    @include reset-button;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 22px;
+      font-weight: 500;
+      text-align: left;
+    }
+  }
+
+  &__plus-icon,
+  &__minus-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  &__minus-icon {
+    display: none;
+  }
+
+  &__text-wrapper {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}
