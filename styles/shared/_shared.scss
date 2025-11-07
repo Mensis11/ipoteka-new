@@ -1,0 +1,32 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+.bg-blue-button,
+.bg-transparent-button {
+  @include reset-button;
+
+  align-self: start;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.bg-blue-button {
+  background-color: #0000ad;
+  color: white;
+
+  &:hover {
+    background-color: #6bb2fa;
+    color: #0000ad;
+  }
+}
+
+.bg-transparent-button {
+  color: #0000ad;
+  border: 3px solid #0000ad;
+
+  &:hover {
+    background-color: white;
+  }
+}

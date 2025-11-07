@@ -1,0 +1,37 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+.hero {
+  &__body {
+    background: #5bbce3;
+    background: linear-gradient(-90deg,rgba(91, 188, 227, 1) 0%, rgba(158, 207, 255, 1) 39%);
+
+    &-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  &__title {
+    font-size: 55px;
+    width: 80%;
+    line-height: 1.1;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &-item {
+      font-size: 18px;
+    }
+  }
+}
