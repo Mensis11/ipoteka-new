@@ -2,12 +2,6 @@
 
 .footer {
 
-  &__body {
-    &-inner {
-      padding-block: 60px;
-    }
-  }
-
   &__map {
     height: 400px;
   }
@@ -19,6 +13,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-block: 60px;
 
     @include tablet {
       grid-template-columns: 1fr;
@@ -81,6 +76,7 @@
   &__copyright {
     color: white;
     font-size: 14px;
+    padding-bottom: 60px;
 
     @include tablet {
       font-size: 12px;
