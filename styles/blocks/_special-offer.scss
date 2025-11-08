@@ -1,0 +1,40 @@
+.special-offer {
+
+  &__content {
+    background: #5bbce3;
+    background: linear-gradient(-90deg,rgba(91, 188, 227, 1) 0%, rgba(158, 207, 255, 1) 39%);
+
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 40px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+}
