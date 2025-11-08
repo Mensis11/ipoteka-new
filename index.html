@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кредитне Бюро Західного Регіону</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="scripts/main.js" type="module" defer></script>
 </head>
 <body>
+
     <header class="header">
         <div class="header__body">
             <div class="header__body-inner container">
@@ -25,8 +27,11 @@
                             <a href="#" class="header__link header__link--page">Про нас</a>
                             <a href="#" class="header__link header__link--page">Контакти</a>
                         </div>
-                        <button class="bg-transparent-button" type="button">
+                        <button class="header__call-button bg-transparent-button" type="button">
                             ЗАМОВИТИ ДЗВІНОК
+                        </button>
+                        <button class="header__burger-menu-button visible-tablet" type="button">
+                            <img src="assets/icons/burger-menu.svg" alt="burger-menu" class="header__burger-menu-img">
                         </button>
                     </nav>
                 </div>
@@ -54,7 +59,7 @@
                         <li class="hero__list-item">— Термін позики обираєте Ви</li>
                         <li class="hero__list-item">— Видача кредиту всього за 20 хв.</li>
                     </ul>
-                    <button class="bg-blue-button" type="button">ОТРИМАТИ ГРОШІ</button>
+                    <button class="hero__call-button bg-blue-button" type="button">ОТРИМАТИ ГРОШІ</button>
                 </div>
                 <div class="hero__column">
                     <img src="assets/images/money.png" alt="hero-image" class="hero__image">
@@ -556,7 +561,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="scripts/main.js" type="module"></script>
 </body>
 </html>

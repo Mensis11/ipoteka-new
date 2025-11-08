@@ -1,7 +1,13 @@
+@use '../helpers' as *;
+
 .questions {
 
   &__title {
     font-size: 30px;
+
+    @include tablet {
+      font-size: 20px;
+    }
   }
 
   &__list {

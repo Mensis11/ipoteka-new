@@ -1,3 +1,5 @@
+@use '../helpers' as *;
+
 .agreement {
 
   &__title {
@@ -10,13 +12,21 @@
     align-items: center;
     column-gap: 20px;
 
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
     &-item {
       display: flex;
       align-items: stretch;
       padding: 60px 20px;
       background-color: white;
       border-radius: 10px;
-      justify-content: start;
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 

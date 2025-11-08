@@ -6,6 +6,10 @@
   --container-width: 1600px;
   --container-padding-x: 140px;
 
+  @include mobile {
+    --container-padding-x: 40px;
+  }
+
   --transition-duration: 0.2s;
 
   @include laptop {

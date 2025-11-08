@@ -1,7 +1,11 @@
+@use '../helpers' as *;
+
 .offer {
 
   &__image {
-    flex-shrink: 0;
+    @include tablet {
+      display: none;
+    }
   }
 
   &__content {
@@ -13,12 +17,20 @@
 
   &__title {
     font-size: 35px;
+
+    @include tablet {
+      font-size: 25px;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
 
     &-item {
       display: flex;
@@ -41,5 +53,9 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+
+    @include mobile {
+      display: none;
+    }
   }
 }

@@ -1,3 +1,5 @@
+@use '../helpers' as *;
+
 .footer {
 
   &__map {
@@ -12,6 +14,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-block: 60px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
   }
 
   &__link {
@@ -21,6 +28,10 @@
     transition: 0.2s ease;
     font-size: 18px;
     justify-self: start;
+
+    @include tablet {
+      font-size: 16px;
+    }
 
     &:hover {
       color: black;
@@ -32,6 +43,10 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
 
   &__column {
@@ -45,6 +60,10 @@
 
     &:not(:first-child) {
       align-items: center;
+
+      @include tablet {
+        align-items: start;
+      }
     }
   }
 
@@ -57,5 +76,9 @@
   &__copyright {
     color: white;
     font-size: 14px;
+
+    @include tablet {
+      font-size: 12px;
+    }
   }
 }

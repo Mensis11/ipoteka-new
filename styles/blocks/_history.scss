@@ -1,3 +1,5 @@
+@use '../helpers' as *;
+
 .history {
 
   &__body {
@@ -6,6 +8,12 @@
       align-items: center;
       justify-content: space-between;
       column-gap: 30px;
+    }
+  }
+
+  &__image {
+    @include tablet {
+      display: none;
     }
   }
 
@@ -18,11 +26,19 @@
   &__title {
     font-size: 30px;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 25px;
+    }
   }
 
   &__text {
     font-size: 18px;
     color: #5a5a5a;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 
   &__list {

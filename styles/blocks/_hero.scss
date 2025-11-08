@@ -12,6 +12,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
+
+      @include tablet {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
@@ -25,6 +29,11 @@
     font-size: 55px;
     width: 80%;
     line-height: 1.1;
+
+    @include tablet {
+      font-size: 35px;
+      width: 100%;
+    }
   }
 
   &__list {
@@ -34,6 +43,22 @@
 
     &-item {
       font-size: 18px;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__image {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__call-button {
+    @include mobile {
+      width: 100%;
     }
   }
 }
