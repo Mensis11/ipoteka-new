@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="./styles/main.css">
     <script src="scripts/main.js" type="module" defer></script>
 </head>
+<script>
+   
+    document.addEventListener('DOMContentLoaded', function () {
+    const burger = document.querySelector('.header__burger-menu-button');
+    const nav = document.querySelector('.header__navigation-two');
+
+    burger.addEventListener('click', function () {
+        nav.classList.toggle('is-open');
+    });
+    });
+
+</script>
 <body>
     <header class="header">
         <div class="header__body">
