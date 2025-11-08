@@ -2,6 +2,12 @@
 
 .footer {
 
+  &__body {
+    &-inner {
+      padding-block: 60px;
+    }
+  }
+
   &__map {
     height: 400px;
   }
@@ -13,7 +19,6 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-block: 60px;
 
     @include tablet {
       grid-template-columns: 1fr;
