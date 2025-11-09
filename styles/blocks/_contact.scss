@@ -19,12 +19,24 @@
 
 .contact{
 
+        h1{
+            font-size: 36px;
+            text-align: start;
+            margin-bottom: 20px;
+
+        }
+
         &__contants{
             display: flex;
             justify-content: center;
             gap: 100px;
             margin: 0 auto ;
             width: 1440px;
+            @include mobile{
+                flex-direction: column;
+                gap: 50px;
+                width: 90%;
+            }
             
         }
 
@@ -55,6 +67,10 @@
             a{
                 @include abox;
                 font-weight: 600;
+                @include mobile{
+                    flex-direction: column;
+                    font-size: 16px;
+                }
                 
             }
             a:hover{
@@ -65,7 +81,11 @@
                 display: flex; 
                 gap:10px ;
                 a{  
-                    @include abox;  
+                    @include abox;
+                    @include mobile{
+                        flex-direction: column;
+                        font-size: 16px;
+                    }  
                 }
                 a:hover{
                 color: #242323;
