@@ -14,20 +14,21 @@
 }
 
 .bg-blue-button {
-  background-color: #0000ad;
+  background-color: #A27F64;
   color: white;
 
   &:hover {
-    background-color: #6bb2fa;
-    color: #0000ad;
+    background-color: #655247;
   }
 }
 
 .bg-transparent-button {
-  color: #0000ad;
-  border: 3px solid #0000ad;
+  color: #000000;
+  border: 3px solid #A27F64;
 
   &:hover {
-    background-color: white;
+    background-color: #655247;
+    border: 3px solid #655247;
+    color: #ffffff;
   }
 }

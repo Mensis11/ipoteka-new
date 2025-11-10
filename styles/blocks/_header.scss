@@ -5,7 +5,7 @@
   &__body {
     padding-block: 20px;
     background: #5bbce3;
-    background: linear-gradient(-90deg,rgba(91, 188, 227, 1) 0%, rgba(158, 207, 255, 1) 39%);
+    background: linear-gradient(-90deg, #ADC177 0%, #D7DFAF 39%);
 
     &-inner {
       display: flex;
@@ -25,6 +25,11 @@
   }
 
   &__row {
+     
+    &--two{
+      display: flex;
+      justify-content: center;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -135,6 +140,7 @@
   }
 
   &__navigation-two {
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,6 +157,7 @@
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
       &.is-open {
+        margin-top: 30px;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
