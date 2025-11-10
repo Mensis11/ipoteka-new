@@ -44,15 +44,20 @@
     position: absolute;
     top: 5%;
     right: 0;
-    background-image: url("../../assets/icons/label.png");
-    z-index: 10;
-    width: 215px;
-    height: 58px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
+    &-text {
+      font-weight: 600;
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      top: 50%;
+      left: 69%;
+      translate: -50% -50%;
+    }
+
+    &-image {
+      position: relative;
+    }
 
     @include mobile {
       display: none;
