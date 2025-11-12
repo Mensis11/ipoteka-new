@@ -1,0 +1,1 @@
+.offers__list{display:flex;flex-direction:column;row-gap:30px}.offers__list-item{display:flex;align-items:center;-moz-column-gap:50px;column-gap:50px;padding:60px 30px;border-radius:10px;position:relative;background-color:#fff}@media(width <= 767.98px){.offers__list-item{-moz-column-gap:0;column-gap:0}}

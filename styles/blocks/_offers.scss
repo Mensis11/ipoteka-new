@@ -1,3 +1,4 @@
+@use '../helpers' as *;
 .offers {
 
   &__list {
@@ -8,11 +9,14 @@
     &-item {
       display: flex;
       align-items: center;
-      column-gap: 10px;
+      column-gap: 50px;
       padding: 60px 30px;
       border-radius: 10px;
       position: relative;
       background-color: white;
+      @include mobile {
+      column-gap: 0;   
+    }
     }
   }
 }

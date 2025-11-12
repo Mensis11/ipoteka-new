@@ -24,6 +24,7 @@
   }
 
   &__list {
+    // width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -33,6 +34,7 @@
     }
 
     &-item {
+      justify-self: start;
       display: flex;
       align-items: center;
       column-gap: 10px;
